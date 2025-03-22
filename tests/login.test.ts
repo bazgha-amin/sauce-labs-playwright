@@ -6,12 +6,12 @@ test.describe("Login Tests", () => {
     await loginPage.navigate();
   });
 
-  test("Valid Login", async ({ loginPage }) => {
+  test("Verify Valid Login", async ({ loginPage }) => {
     await loginPage.login(users.validUser.username, users.validUser.password);
     await loginPage.verifyLoginSuccess();
   });
 
-  test("Invalid Login", async ({ loginPage }) => {
+  test("Verify Invalid Login", async ({ loginPage }) => {
     await loginPage.login(users.invalidUser.username, users.invalidUser.password);
     await loginPage.verifyLoginFailure();
   });
