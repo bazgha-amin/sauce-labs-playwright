@@ -38,16 +38,20 @@ git clone https://github.com/bazgha-amin/sauce-labs-playwright
 npm install
 
 ### **3️⃣ Run Tests**
-To execute all tests:
+**To execute all tests:**
+
 npx playwright test
 
-To run specific test file:
+**To run specific test file:**
+
 npx playwright test tests/login.test.ts
 
-To run tests in headed mode(with browser UI):
+**To run tests in headed mode(with browser UI):**
+
 npx playwright test --headed
 
 ### **4️⃣ View HTML Test Report**
-After running tests, generate and view the report:
+**After running tests, generate and view the report:**
+
 npx playwright show-report
 
